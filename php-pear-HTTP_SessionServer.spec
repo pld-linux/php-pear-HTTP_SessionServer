@@ -13,7 +13,7 @@ License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	04db70207576806a55f38f0b0a5e7abf
-URL:		http://pear.php.net/package/Class_Subclass/
+URL:		http://pear.php.net/package/HTTP_SessionServer/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
 BuildArch:	noarch
@@ -33,10 +33,18 @@ Net_Socket as well as a session save handler.
 
 In PEAR status of this package is: %{_status}.
 
-#%description -l pl
-#...
-#
-#Ta klasa ma w PEAR status: %{_status}.
+%description -l pl
+HTTP_SeesionServer jest prostym, opartym na PHP daemonem wspomagaj±cym
+przetwarzanie stanu sesji pomiêdzy dwoma serwerami.
+
+HTTP_SessionServer zawiera zaimplementowany prosty protokó³ do zapisu
+i odczytu danych na serwerze. Backend do zapisu jest oparty na
+sterownikach, obecnie mo¿liwy jest zapis tylko do pliku.
+
+HTTP_SessionServer jest dostarczany z klientem zaimplementowanym przy
+u¿yciu Net_Socket jak równie¿ z obs³ug± zapisu sesji.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
