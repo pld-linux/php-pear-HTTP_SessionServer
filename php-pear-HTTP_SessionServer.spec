@@ -4,8 +4,8 @@
 %define		_status		alpha
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - Daemon to store session data
-Summary(pl):	%{_pearname} - Daemon to przechowywania danych sesji
+Summary:	%{_pearname} - daemon to store session data
+Summary(pl):	%{_pearname} - demon do przechowywania danych sesji
 Name:		php-pear-%{_pearname}
 Version:	0.3.0
 Release:	1
