@@ -8,14 +8,19 @@ Summary:	%{_pearname} - daemon to store session data
 Summary(pl):	%{_pearname} - demon do przechowywania danych sesji
 Name:		php-pear-%{_pearname}
 Version:	0.4.0
-Release:	2
+Release:	2.2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	71ff19663cee9e427e0d6db1c83a1d35
 URL:		http://pear.php.net/package/HTTP_SessionServer/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+Requires:	php-common >= 3:4.3.0
+Requires:	php-pcntl
 Requires:	php-pear
+Requires:	php-pear-PEAR
+Requires:	php-pear-Net_Server >= 0.12.0
+Requires:	php-pear-Net_Socket
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
