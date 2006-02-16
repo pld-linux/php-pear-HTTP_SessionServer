@@ -18,9 +18,9 @@ BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:4.3.0
 Requires:	php-pcntl
 Requires:	php-pear
-Requires:	php-pear-PEAR
 Requires:	php-pear-Net_Server >= 0.12.0
 Requires:	php-pear-Net_Socket
+Requires:	php-pear-PEAR-core
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
