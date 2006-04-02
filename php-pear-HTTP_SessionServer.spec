@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - daemon to store session data
 Summary(pl):	%{_pearname} - demon do przechowywania danych sesji
 Name:		php-pear-%{_pearname}
-Version:	0.4.0
-Release:	4
+Version:	0.5.0
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	71ff19663cee9e427e0d6db1c83a1d35
+# Source0-md5:	52ec43a814aea36fa16f94a122e3fbc3
 URL:		http://pear.php.net/package/HTTP_SessionServer/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -26,7 +26,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # exclude optional dependencies
-%define		_noautoreq	'pear(DB.*)'
+%define		_noautoreq	'pear(DB.*)' 'pear(MDB2.*)'
 
 %description
 HTTP_SessionServer is a simple PHP based daemon that helps you
