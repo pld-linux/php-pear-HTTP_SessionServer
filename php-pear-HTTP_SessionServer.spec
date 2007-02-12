@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - daemon to store session data
-Summary(pl):	%{_pearname} - demon do przechowywania danych sesji
+Summary(pl.UTF-8):   %{_pearname} - demon do przechowywania danych sesji
 Name:		php-pear-%{_pearname}
 Version:	0.5.0
 Release:	2
@@ -43,16 +43,16 @@ Net_Socket as well as a session save handler.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-HTTP_SeesionServer jest prostym, opartym na PHP daemonem wspomagaj±cym
-przetwarzanie stanu sesji pomiêdzy dwoma serwerami.
+%description -l pl.UTF-8
+HTTP_SeesionServer jest prostym, opartym na PHP daemonem wspomagajÄ…cym
+przetwarzanie stanu sesji pomiÄ™dzy dwoma serwerami.
 
-HTTP_SessionServer zawiera zaimplementowany prosty protokó³ do zapisu
+HTTP_SessionServer zawiera zaimplementowany prosty protokÃ³Å‚ do zapisu
 i odczytu danych na serwerze. Backend do zapisu jest oparty na
-sterownikach, obecnie mo¿liwy jest zapis tylko do pliku.
+sterownikach, obecnie moÅ¼liwy jest zapis tylko do pliku.
 
 HTTP_SessionServer jest dostarczany z klientem zaimplementowanym przy
-u¿yciu Net_Socket jak równie¿ z obs³ug± zapisu sesji.
+uÅ¼yciu Net_Socket jak rÃ³wnieÅ¼ z obsÅ‚ugÄ… zapisu sesji.
 
 Ta klasa ma w PEAR status: %{_status}.
 
