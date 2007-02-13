@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - daemon to store session data
-Summary(pl.UTF-8):   %{_pearname} - demon do przechowywania danych sesji
+Summary(pl.UTF-8):	%{_pearname} - demon do przechowywania danych sesji
 Name:		php-pear-%{_pearname}
 Version:	0.5.0
 Release:	2
