@@ -3,12 +3,11 @@
 %define		_subclass	SessionServer
 %define		_status		alpha
 %define		_pearname	%{_class}_%{_subclass}
-
 Summary:	%{_pearname} - daemon to store session data
 Summary(pl.UTF-8):	%{_pearname} - demon do przechowywania danych sesji
 Name:		php-pear-%{_pearname}
 Version:	0.5.0
-Release:	3
+Release:	4
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -17,12 +16,14 @@ URL:		http://pear.php.net/package/HTTP_SessionServer/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php(pcntl)
 Requires:	php-common >= 3:4.3.0
+Requires:	php-pcntl
 Requires:	php-pear
 Requires:	php-pear-Net_Server >= 0.12.0
 Requires:	php-pear-Net_Socket
 Requires:	php-pear-PEAR-core
+Suggests:	php-pear-DB
+Suggests:	php-pear-MDB2 >= 1:2.0.0-0.RC1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
