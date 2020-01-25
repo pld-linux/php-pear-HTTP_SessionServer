@@ -2,7 +2,6 @@
 %define		_subclass	SessionServer
 %define		_status		alpha
 %define		_pearname	HTTP_SessionServer
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - daemon to store session data
 Summary(pl.UTF-8):	%{_pearname} - demon do przechowywania danych sesji
 Name:		php-pear-%{_pearname}
